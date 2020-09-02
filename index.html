@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang = "en">
+<head>
+<title>Bingshu's Online Shop</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+/* import text from google */
+@import url('https://fonts.googleapis.com/css2?family=Alex+Brush&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Special+Elite&display=swap');
+* {
+  box-sizing: border-box;
+}
+
+/*body */
+body {
+    font-family:'Times New Roman', Times, serif;
+    margin: 0;
+}
+
+/* header */
+.header {
+    padding: 80px;
+    text-align: center;
+    background: #7adeff;
+    color: rgb(0, 0, 0);
+}
+
+/*header font */
+.header h1 {
+    font-family:'Special Elite', cursive ;
+    font-size: 90px;
+}
+
+/* nav bar */
+.navbar {
+  overflow: hidden;
+  background-color: #ffffff;
+}
+
+/* nav bar link */
+.navbar a {
+    float: right;
+    display:block;
+    color: black;
+    text-align: center;
+    padding: 14px 20px;
+}
+
+/* Footer */
+.footer {
+  padding: 20px;
+  text-align: center;
+  background: #ddd;
+}
+
+/* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 700px) {
+  .row {   
+    flex-direction: column;
+  }
+}
+
+/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+@media screen and (max-width: 400px) {
+  .navbar a {
+    float: none;
+    width: 100%;
+  }
+}
+</style>
+</head>
+<body>
+<div class="header">
+    <h1>Bingshu's Junkyard</h1>
+</div>
+</body>
+</html>
