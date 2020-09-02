@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang = "en">
 <head>
-<title>Bingshu's Online Shop</title>
+<title>Bingshu's Junkyard</title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <style>
@@ -22,13 +22,19 @@ body {
 .header {
     padding: 80px;
     text-align: center;
-    background: #7adeff;
+    background-image: url(./headerbg.jpg);
+    background-repeat: no-repeat;
     color: rgb(0, 0, 0);
+
 }
 
 /*header font */
 .header h1 {
     font-family:'Special Elite', cursive ;
+    text-shadow: -1px 1px 0 #fff, 
+                          2px 2px 0 #fff, 
+                         2px -2px 0 #fff; 
+                        -2px -2px 0 #fff; 
     font-size: 90px;
 }
 
@@ -47,6 +53,34 @@ body {
     padding: 14px 20px;
 }
 
+/* Change color on hover */
+.navbar a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Column container */
+.row {  
+  display: -ms-flexbox; /* IE10 */
+  display: flex;
+  -ms-flex-wrap: wrap; /* IE10 */
+  flex-wrap: wrap;
+}
+/* Create two unequal columns that sits next to each other */
+/* Sidebar/left column */
+.side {
+  -ms-flex: 20%; /* IE10 */
+  flex: 20%;
+  background-color: #f1f1f1;
+  padding: 20px;
+}
+/* Main column */
+.main {   
+  -ms-flex: 80%; /* IE10 */
+  flex: 80%;
+  background-color: white;
+  padding: 20px;
+}
 /* Footer */
 .footer {
   padding: 20px;
@@ -73,6 +107,25 @@ body {
 <body>
 <div class="header">
     <h1>Bingshu's Junkyard</h1>
+</div>
+
+<div class="navbar">
+    <a href="#">link</a>
+    <a href="#">link</a>
+</div>
+
+<div class="row">
+    <div class="side">
+        <a href="#">home</a>
+        </br>
+        <a href="#">contact us</a>
+    </div>
+    <div class="main">
+        <h1> picture</h1>
+    </div>
+</div>
+<div class="footer">
+    <h2>@bingshu_bujo</h2>
 </div>
 </body>
 </html>
