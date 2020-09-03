@@ -8,6 +8,7 @@
 /* import text from google */
 @import url('https://fonts.googleapis.com/css2?family=Alex+Brush&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Special+Elite&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+SC&display=swap');
 * {
   box-sizing: border-box;
 }
@@ -32,9 +33,9 @@ body {
 .header h1 {
     font-family:'Special Elite', cursive ;
     text-shadow: -1px 1px 0 #fff, 
-                          2px 2px 0 #fff, 
-                         2px -2px 0 #fff; 
-                        -2px -2px 0 #fff; 
+                  2px 2px 0 #fff, 
+                  2px -2px 0 #fff; 
+                  -2px -2px 0 #fff; 
     font-size: 90px;
 }
 
@@ -55,7 +56,8 @@ body {
 .sidenav a {
   padding: 8px 8px 8px 32px;
   text-decoration: none;
-  font-size: 25px;
+  font-size: 20px;
+  font-family: 'Courier New', Courier, monospace;
   color: #818181;
   display: block;
   transition: 0.3s;
@@ -73,17 +75,25 @@ body {
   margin-left: 50px;
 }
 
+/*sticky*/
+.sticky {
+  position: fixed;
+  left: 0;
+  width: 100%;
+}
+
+
 /* nav bar */
 .navbar {
   overflow: hidden;
-  background-color: #ffffff;
+  background-color: rgb(29, 29, 29);
 }
 
 /* nav bar on top */
 .navbar a {
     float: right;
     display:block;
-    color: black;
+    color: white;
     text-align: center;
     padding: 14px 20px;
 }
@@ -96,7 +106,7 @@ body {
 
 /* Footer */
 .footer {
-  padding: 20px;
+  padding: 15px;
   text-align: center;
   background: #ddd;
 }
@@ -115,15 +125,46 @@ body {
     width: 100%;
   }
 }
+
+/*product card*/
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  max-width: 300px;
+  margin: auto;
+  text-align: center;
+  font-family: arial;
+}
+
+.price {
+  color: grey;
+  font-size: 22px;
+}
+
+.card button {
+  border: none;
+  outline: 0;
+  padding: 12px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  font-size: 18px;
+}
+
+.card button:hover {
+  opacity: 0.7;
+}
 </style>
 </head>
 <body>
 
 <div id="mySidenav" class="sidenav">
     <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-    <a href="#">About</a>
-    <a href="#">Services</a>
-    <a href="#">Clients</a>
+    <a href="#">Home</a>
+    <a href="#">About us</a>
+    <a href="#">Special offers</a>
+    <a href="#">Cart</a>
     <a href="#">Contact</a>
 </div>
 
@@ -135,8 +176,7 @@ body {
     <a href="#">link</a>
     <a href="#">link</a>
 </div>
------delete 
-<span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; open</span>
+<span style="font-size:30px;font-family:'Courier New', Courier, monospace; cursor:pointer" onclick="openNav()">&#9776; Menu</span>
 
 <script>
 function openNav() {
@@ -148,7 +188,13 @@ function closeNav() {
 }
 </script>
    
-
+<div class="card">
+  <img src="./products/Image001.png" alt="Old Vintage Bus Ticket" style="width:100%">
+  <h1>Old Vintage Bus Ticket</h1>
+  <p class="price">RM 5</p>
+  <p>An old ticket</p>
+  <p><button>Add to Cart</button></p>
+</div>
 <div class="footer">
     <h2>@bingshu_bujo</h2>
 </div>
