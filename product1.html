@@ -1,18 +1,15 @@
 <!DOCTYPE html>
-<html lang = "en">
+<html lang="en">
 <head>
 <title>Bingshu's Junkyard</title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+
 <style>
 /* import text from google */
 @import url('https://fonts.googleapis.com/css2?family=Alex+Brush&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Special+Elite&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Noto+Serif+SC&display=swap');
-* {
-  box-sizing: border-box;
-}
-
 /*body */
 body {
     font-family:'Times New Roman', Times, serif;
@@ -23,10 +20,9 @@ body {
 .header {
     padding: 80px;
     text-align: center;
-    background-image: url(./image/headerbg.jpg);
+    background-image:url(./image/headerbg.jpg);
     background-repeat: no-repeat;
     color: rgb(0, 0, 0);
-
 }
 
 /*header font */
@@ -158,63 +154,42 @@ div.sticky {
 </style>
 </head>
 <body>
-
-
-
-<div class="header">
-    <h1>Bingshu's Junkyard</h1>
-</div>
-
-<div class="navbar">
-    <a href="#">link</a>
-    <a href="#">link</a>
-</div>
-<span style="font-size:30px;font-family:'Courier New', Courier, monospace; cursor:pointer" onclick="openNav()">&#9776; Menu</span>
-<div class="sticky">
-  <div id="mySidenav" class="sidenav">
-    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-    <a href="#">Home</a>
-    <a href="#">About us</a>
-    <a href="#">Special offers</a>
-    <a href="#">Cart</a>
-    <a href="#">Contact</a>
-</div>
-</div>
-<script>
-function openNav() {
-  document.getElementById("mySidenav").style.width = "250px";
-}
-
-function closeNav() {
-  document.getElementById("mySidenav").style.width = "0";
-}
-</script>
-   
-<div class="card">
-  <a href="./product1.html"><img src="./image/product/Image001.png"" alt="Old Vintage Bus Ticket" style="width:100%"></a>
-  <h1>Old Vintage Bus Ticket</h1>
-  <p class="price">RM 5</p>
-  <p>An old ticket</p>
-  <p><button>Add to Cart</button></p>
-</div>
-
-<div class="card">
-  <img src="./image/product/Image001.png"Old Vintage Bus Ticket" style="width:100%">
-  <h1>Old Vintage Bus Ticket</h1>
-  <p class="price">RM 5</p>
-  <p>An old ticket</p>
-  <p><button>Add to Cart</button></p>
-</div>
-
-<div class="card">
-  <img src="./image/product/Image001.png"" alt="Old Vintage Bus Ticket" style="width:100%">
-  <h1>Old Vintage Bus Ticket</h1>
-  <p class="price">RM 5</p>
-  <p>An old ticket</p>
-  <p><button>Add to Cart</button></p>
-</div>
-<div class="footer">
-    <h2>@bingshu_bujo</h2>
-</div>
+    <div class="header">
+        <h1>Bingshu's Junkyard</h1>
+    </div>
+    
+    <div class="navbar">
+        <a href="#">link</a>
+        <a href="#">link</a>
+    </div>
+    <span style="font-size:30px;font-family:'Courier New', Courier, monospace; cursor:pointer" onclick="openNav()">&#9776; Menu</span>
+    <div class="sticky">
+      <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="#">Home</a>
+        <a href="#">About us</a>
+        <a href="#">Special offers</a>
+        <a href="#">Cart</a>
+        <a href="#">Contact</a>
+    </div>
+    </div>
+    <script>
+    function openNav() {
+      document.getElementById("mySidenav").style.width = "250px";
+    }
+    
+    function closeNav() {
+      document.getElementById("mySidenav").style.width = "0";
+    }
+    </script>
+       
+    <div class="card">
+      <img src="./image/product/Image001.png" alt="Old Vintage Bus Ticket" style="width:100%">
+      <h1>Old Vintage Bus Ticket</h1>
+      <p class="price">RM 5</p>
+      <p>An old ticket</p>
+      <p><button>Add to Cart</button></p>
+    </div>
+    
 </body>
 </html>
